@@ -5,7 +5,7 @@ import os
 import time
 
 app = Flask(__name__)
-CORS(app, resources={r"/": {"origins": ""}})
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 CODEGEN_API_URL = "https://api-inference.huggingface.co/models/Salesforce/codet5-base"
 
